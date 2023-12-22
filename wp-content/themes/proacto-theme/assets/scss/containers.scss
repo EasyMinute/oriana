@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  margin: auto;
+  max-width: 1280px;
+
+  @media screen and (max-width: 1280px) {
+    padding: 32px 0;
+  }
+
+  @media screen and (max-width: 920px) {
+    padding: 18px 0;
+  }
+}
+
+.mobile {
+  @media screen and (min-width: 920px) {
+    display: none !important;
+  }
+}
+
+.desktop {
+  @media screen and (max-width: 920px) {
+    display: none !important;
+  }
+}
+
+.page-template {
+  padding-top: 106px;
+
+  @media screen and (max-width: 920px) {
+    padding-top: 65px;
+  }
+
+}
