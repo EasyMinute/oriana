@@ -1,0 +1,108 @@
+@import "../variables";
+
+.prt-listing-quote {
+  &-wrap {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+    .left-part {
+      width: 60%;
+      padding: 80px 64px;
+      background-color: $primary-100;
+
+      @media screen and (max-width: 920px) {
+        padding: 64px 16px;
+        width: 100%;
+      }
+
+      h2 {
+        color: $primary-600;
+        margin-bottom: 32px;
+      }
+    }
+
+    .right-part {
+      width: 40%;
+      background-color: $primary-600;
+      padding: 80px 64px;
+      background-image: url(/img/icons/listing-quote-fingerprint.svg);
+      background-size: 270px 160px;
+      background-position: right bottom;
+      background-repeat: no-repeat;
+
+      @media screen and (max-width: 920px) {
+        width: 100%;
+        padding: 64px 16px ;
+      }
+
+      * {
+        color: $secondary-100;
+      }
+
+      .heading-h2 {
+        max-width: 384px;
+        margin: 0 auto 32px auto;
+
+        @media screen and (max-width: 920px) {
+          max-width: 100%;
+        }
+      }
+
+      p {
+        max-width: 384px;
+        margin: 0 auto;
+
+        @media screen and (max-width: 920px) {
+          max-width: 100%;
+        }
+      }
+
+    }
+  }
+}
+
+.mash-list {
+  li {
+    display: flex;
+    width: 100%;
+    margin-bottom: 24px;
+    align-items: center;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 64px;
+      height: 12px;
+      min-width: 64px;
+      margin-right: 8px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(n+1) {
+      &:before {
+        background-image: url(/img/icons/list-marker-1.svg);
+      }
+    }
+
+    &:nth-child(n+2) {
+      &:before {
+        background-image: url(/img/icons/list-marker-2.svg);
+      }
+    }
+
+    &:nth-child(n+3) {
+      &:before {
+        background-image: url(/img/icons/list-marker-3.svg);
+      }
+    }
+
+    &:nth-child(n+4) {
+      &:before {
+        background-image: url(/img/icons/list-marker-4.svg);
+      }
+    }
+  }
+}

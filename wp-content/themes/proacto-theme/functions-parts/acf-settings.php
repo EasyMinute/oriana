@@ -65,6 +65,24 @@ class Acf_Config {
                 'category' => 'proacto-custom-blocks',
                 'icon' => 'cover-image',
             ),
+	        array(
+		        'name' => 'listing-quote',
+		        'title' => __('Головна - Список', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'media-document',
+	        ),
+	        array(
+		        'name' => 'icons_list',
+		        'title' => __('Головна - Перелік іконок', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'align-center',
+	        ),
+	        array(
+		        'name' => 'masonry_gallery',
+		        'title' => __('Плиткова галерея', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'format-gallery',
+	        ),
         );
 
         if ( function_exists( 'acf_register_block_type' ) ) {

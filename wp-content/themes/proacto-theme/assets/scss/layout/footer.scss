@@ -1,0 +1,119 @@
+.footer {
+  padding: 56px 0 32px;
+  background-color: $primary-600;
+
+  @media screen and (max-width: 920px){
+    padding: 40px 0;
+  }
+
+  .footer__wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    @media screen and (max-width: 920px){
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .footer-logo {
+      width: 100%;
+      max-width: 162px;
+      margin: 0 auto auto 0;
+
+      @media screen and (max-width: 920px){
+        margin-bottom: 40px;
+      }
+    }
+
+    .footer-socials {
+      width: fit-content;
+      margin-right: 4%;
+
+      @media screen and (max-width: 920px){
+        margin-right: 0;
+        margin-bottom: 32px;
+      }
+
+      p {
+        color: $primary-400;
+        margin-bottom: 16px;
+      }
+
+      ul {
+        display: flex;
+
+        li {
+          margin-right: 16px;
+
+          img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+
+    .footer-contacts {
+      margin-right: 4%;
+
+      @media screen and (max-width: 920px){
+        margin-bottom: 32px;
+        margin-right: 0;
+      }
+
+      ul {
+        li {
+          display: flex;
+          align-items: center;
+          margin-bottom: 8px;
+
+          svg {
+            margin-right: 8px;
+          }
+
+          a {
+            color: $primary-200;
+          }
+        }
+      }
+    }
+
+    .footer_payment {
+      max-width: 240px;
+
+      .body-small-1 {
+        margin-bottom: 16px;
+        color: $primary-400;
+      }
+
+      .body-small-2 {
+        color: $primary-200;
+      }
+    }
+  }
+
+  .footer-divider {
+    width: 100%;
+    margin: 32px 0;
+    height: 2px;
+    background: $primary-400;
+  }
+
+  .footer-legals {
+    text-align: center;
+    color: $primary-200;
+
+    a {
+      color: $primary-200;
+      text-decoration: underline;
+
+      &:hover {
+        color: $primary-200;
+        text-decoration: none;
+      }
+    }
+  }
+}
