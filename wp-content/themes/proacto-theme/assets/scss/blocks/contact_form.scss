@@ -1,0 +1,60 @@
+@import "../variables";
+
+.contact_form {
+  background-color: $primary-200;
+  background-image: url(/img/icons/contact_form-fingerprint.svg);
+  background-size: 380px 380px;
+  background-position: -50px top;
+  background-repeat: no-repeat;
+  padding: 112px 0;
+
+  .contact_form-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1064px;
+    margin: auto;
+
+    @media screen and (max-width: 920px) {
+      flex-wrap: wrap;
+    }
+
+    .contact_form-texts {
+      width: 100%;
+      max-width: 336px;
+      margin-right: 24px;
+
+      @media screen and (max-width: 920px) {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 24px;
+      }
+
+      h2 {
+        color: $primary-600;
+        margin-bottom: 24px;
+
+        &:after {
+          content: '';
+          display: block;
+          margin-top: 8px;
+          height: 8px;
+          background-color: $secondary-200;
+          border-radius: 8px;
+        }
+      }
+    }
+
+    .contact_form-item {
+      width: 100%;
+      max-width: 632px;
+      background-color: $primary-100;
+      border-radius: 16px;
+      padding: 32px;
+
+      @media screen and (max-width: 920px) {
+        max-width: 100%;
+      }
+    }
+  }
+}

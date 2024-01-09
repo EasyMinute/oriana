@@ -1,0 +1,13 @@
+.short_baner {
+  width: 100%;
+  padding: 52px 0;
+  background-color: $primary-100;
+  background-image:  url(/img/icons/short-baner-fingerprint.svg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  &-title {
+    color: $primary-600;
+  }
+}

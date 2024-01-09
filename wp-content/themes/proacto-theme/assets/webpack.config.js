@@ -4,7 +4,7 @@ const MiniCssExtractPlugin   = require('mini-css-extract-plugin');
 const TerserPlugin           = require('terser-webpack-plugin');
 const CssMinimizerPlugin     = require('css-minimizer-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const ImageMinimizerPlugin   = require("image-minimizer-webpack-plugin");
+// const ImageMinimizerPlugin   = require("image-minimizer-webpack-plugin");
 const FontminPlugin      = require('fontmin-webpack');
 const SoundsPlugin       = require('sounds-webpack-plugin')
 
@@ -180,21 +180,21 @@ module.exports = (env, argv) => ({
         minimizer: [
             new CssMinimizerPlugin(),
             new TerserPlugin(),
-            new ImageMinimizerPlugin({
-                loader: true,
-                deleteOriginalAssets: false,
-                minimizer: {
-                    implementation: ImageMinimizerPlugin.imageminMinify,
-                    options: {
-                        plugins: [
-                            "imagemin-gifsicle",
-                            "imagemin-mozjpeg",
-                            "imagemin-pngquant",
-                            "imagemin-svgo",
-                        ],
-                    },
-                },
-            }),
+            // new ImageMinimizerPlugin({
+            //     loader: true,
+            //     deleteOriginalAssets: false,
+            //     minimizer: {
+            //         implementation: ImageMinimizerPlugin.imageminMinify,
+            //         options: {
+            //             plugins: [
+            //                 "imagemin-gifsicle",
+            //                 // "imagemin-mozjpeg",
+            //                 "imagemin-pngquant",
+            //                 "imagemin-svgo",
+            //             ],
+            //         },
+            //     },
+            // }),
             new FontminPlugin({
                 autodetect: true,
                 extract: {

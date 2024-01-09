@@ -4,6 +4,8 @@
 @import "containers";
 @import "defaults";
 @import "sliders";
+@import "fields";
+@import "reusables";
 
 @import "layout/header";
 @import "layout/footer";
@@ -12,5 +14,8 @@
 @import "blocks/listing-quote";
 @import "blocks/icons_list";
 @import "blocks/masonry_gallery";
+@import "blocks/contact_form";
+@import "blocks/short_baner";
+@import "blocks/news_grid";
 
 @import "static/news";

@@ -83,6 +83,24 @@ class Acf_Config {
 		        'category' => 'proacto-custom-blocks',
 		        'icon' => 'format-gallery',
 	        ),
+	        array(
+		        'name' => 'contact_form',
+		        'title' => __('Контактна Форма', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'buddicons-pm',
+	        ),
+	        array(
+		        'name' => 'short_baner',
+		        'title' => __('Банер сторінки', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'align-wide',
+	        ),
+	        array(
+		        'name' => 'news_grid',
+		        'title' => __('Сітка новин', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'grid-view',
+	        ),
         );
 
         if ( function_exists( 'acf_register_block_type' ) ) {

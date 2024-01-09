@@ -1,0 +1,82 @@
+@import "variables";
+
+.field-wrap {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 24px;
+
+  & > span {
+    color: $neutral-900;
+    margin-bottom: 4px;
+    font-family: Lato, sans-serif;
+  }
+
+  input,
+  textarea {
+    display: block;
+    padding: 12px 16px;
+    width: 100%;
+    color: $neutral-900;
+    border-radius: 16px;
+    border: 1px solid $neutral-500;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    transition: all .3s;
+    resize: none;
+
+    &::placeholder {
+      color: $neutral-600;
+    }
+
+    &:hover {
+      border-color: $primary-600;
+    }
+
+    &:focus {
+      border-color: $primary-500;
+      box-shadow: 0px 0px 3px 0px rgba(29, 122, 133, 0.50);
+    }
+
+    &.wpcf7-not-valid {
+      border-color: $functional-error;
+    }
+  }
+
+  .wpcf7-not-valid-tip {
+    display: block;
+    margin-top: 4px;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $functional-error;
+  }
+}
+
+.wpcf7-response-output {
+  display: none !important;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &.half {
+    .field-wrap {
+      max-width: calc(50% - 12px);
+
+      @media screen and (max-width: 920px) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.wpcf7-spinner {
+  display: none;
+}
