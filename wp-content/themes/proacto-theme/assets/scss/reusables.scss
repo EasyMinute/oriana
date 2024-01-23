@@ -65,3 +65,29 @@
     }
   }
 }
+
+
+.underlined {
+  position: relative;
+  padding-bottom: 16px;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 8px;
+    width: 100%;
+    background-color: $secondary-200;
+    border-radius: 8px;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.tag-chip {
+  display: block;
+  padding: 4px 12px;
+  border-radius: 40px;
+  border: 1px solid;
+  width: fit-content;
+}

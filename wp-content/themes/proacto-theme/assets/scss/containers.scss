@@ -12,6 +12,16 @@
   }
 }
 
+.container-small {
+  width: 100%;
+  margin: auto;
+  max-width: 848px;
+
+  @media screen and (max-width: 848px) {
+    padding: 0 16px;
+  }
+}
+
 .mobile {
   @media screen and (min-width: 920px) {
     display: none !important;

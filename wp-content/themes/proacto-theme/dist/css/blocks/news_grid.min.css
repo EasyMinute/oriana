@@ -1,0 +1,72 @@
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./node_modules/sass-loader/dist/cjs.js!./scss/blocks/news_grid.scss ***!
+  \*******************************************************************************************************************************************************************************************/
+.news_grid {
+  position: relative;
+  padding: 40px 0 112px;
+}
+@media screen and (max-width: 920px) {
+  .news_grid {
+    padding-bottom: 64px;
+  }
+}
+.news_grid-categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+}
+.news_grid-categories .choise-chips {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 8px;
+}
+.news_grid-categories .choise-chips:last-child {
+  margin-right: 0;
+}
+.news_grid-posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.news_grid-posts .post_card {
+  width: 100%;
+  max-width: calc(33.3333333333% - 10.6666666667px);
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 920px) {
+  .news_grid-posts .post_card {
+    max-width: calc(50% - 8px);
+  }
+}
+@media screen and (max-width: 640px) {
+  .news_grid-posts .post_card {
+    max-width: 100%;
+  }
+}
+.news_grid-posts:after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 100%;
+  max-width: calc(33.3333333333% - 10.6666666667px);
+}
+@media screen and (max-width: 920px) {
+  .news_grid-posts:after {
+    max-width: calc(50% - 8px);
+  }
+}
+@media screen and (max-width: 640px) {
+  .news_grid-posts:after {
+    display: none;
+  }
+}

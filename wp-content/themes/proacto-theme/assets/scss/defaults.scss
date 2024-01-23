@@ -19,3 +19,61 @@ a{
 div{
   box-sizing: border-box;
 }
+
+
+//CORE GUTENBERG
+.prt-core-block {
+  margin-bottom: 16px;
+
+  strong, b {
+    font-weight: 700;
+  }
+
+  i, em {
+    font-style: italic;
+  }
+}
+
+blockquote.prt-core-block {
+  cite {
+    font-style: italic;
+    color: $neutral-600;
+  }
+}
+
+h1.prt-core-block,
+h2.prt-core-block,
+h3.prt-core-block,
+h4.prt-core-block,
+h5.prt-core-block,
+h6.prt-core-block {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+ol.prt-core-block {
+  list-style-type: decimal;
+
+  li {
+    margin-left: 32px;
+  }
+}
+
+ul.prt-core-block {
+  list-style-type: disc;
+
+  li {
+    margin-left: 32px;
+  }
+}
+
+.wp-block-image {
+  img {
+    max-height: 534px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 16px;
+  }
+}

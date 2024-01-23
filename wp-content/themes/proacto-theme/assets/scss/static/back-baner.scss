@@ -1,15 +1,16 @@
 @import "../variables";
 
-.short_baner {
+.back-baner {
   width: 100%;
-  padding: 52px 0;
+  padding: 24px 0;
   background-color: $primary-100;
   background-image:  url(/img/icons/short-baner-fingerprint.svg);
-  background-size: auto 100%;
+  background-size: auto 200%;
   background-repeat: no-repeat;
   background-position: right;
 
-  &-title {
-    color: $primary-600;
+  .icon-link {
+    padding: 8px 16px;
+    font-weight: 700;
   }
 }

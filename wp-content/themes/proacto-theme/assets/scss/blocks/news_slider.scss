@@ -1,0 +1,25 @@
+@import "../variables";
+
+.news_slider {
+  padding: 112px 0;
+
+  @media screen and (max-width: 920px) {
+    padding: 40px 0 64px;
+  }
+
+  &-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+
+    .heading-h2 {
+      color: $primary-600;
+    }
+  }
+
+  &-wrap {
+    margin-bottom: 24px;
+  }
+}

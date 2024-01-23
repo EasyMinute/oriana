@@ -101,6 +101,18 @@ class Acf_Config {
 		        'category' => 'proacto-custom-blocks',
 		        'icon' => 'grid-view',
 	        ),
+	        array(
+		        'name' => 'news_slider',
+		        'title' => __('Слайдер новин', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'columns',
+	        ),
+	        array(
+		        'name' => 'photo_gallery',
+		        'title' => __('Галерея фото', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'columns',
+	        ),
         );
 
         if ( function_exists( 'acf_register_block_type' ) ) {

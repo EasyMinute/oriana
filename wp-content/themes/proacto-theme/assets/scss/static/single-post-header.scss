@@ -1,0 +1,19 @@
+.sp-header {
+  padding: 40px 0 32px;
+
+  .heading-h2 {
+    margin-bottom: 12px;
+  }
+
+  .sp-header-meta {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    .date {
+      color: $neutral-600;
+    }
+  }
+}
