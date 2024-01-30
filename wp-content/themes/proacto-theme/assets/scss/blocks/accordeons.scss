@@ -1,0 +1,88 @@
+@import "../variables";
+
+.prt-accordeons {
+  padding: 32px 0;
+}
+
+.accordeons-card {
+  margin-bottom: 16px;
+  padding: 12px 48px;
+  border: 1px solid $neutral-500;
+  border-radius: 8px;
+  transition: all .5s;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    position: relative;
+
+    &:after,
+    &:before{
+      content: '';
+      display: block;
+      width: 14px;
+      height: 2px;
+      border-radius: 3px;
+      background-color: $neutral-900;
+      position: absolute;
+      top: 50%;
+      right: calc(100% + 18px);
+      transform: translateY(-50%);
+      transition: all .3s;
+    }
+
+    &:after {
+      transform: translateY(-50%) rotate(90deg);
+
+    }
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s;
+
+    ol {
+      list-style-type: decimal;
+      li {
+        margin-left: 32px;
+      }
+    }
+
+    ul {
+      list-style-type: disc;
+      li {
+        margin-left: 32px;
+      }
+    }
+
+    strong, b {
+      font-weight: 700;
+    }
+
+    i, em {
+      font-style: italic;
+    }
+  }
+  
+  &.active {
+    background-color: $primary-100;
+    border-color: $primary-600;
+
+    .accordeons-card__title {
+      &:after {
+        transform: translateY(-50%) rotate(0);
+      }
+    }
+
+    .accordeons-card__content {
+      max-height: 2000px;
+      overflow: auto;
+      padding: 12px 0;
+    }
+
+  }
+
+}

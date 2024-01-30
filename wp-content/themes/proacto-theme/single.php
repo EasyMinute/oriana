@@ -19,8 +19,8 @@ get_header();
         <?php echo get_template_part('template-parts/static/back-baner'); ?>
         <div class="container-small">
 	        <?php get_template_part('template-parts/static/single-post-header'); ?>
-		    <?php the_content(); ?>
         </div>
+        <?php the_content(); ?>
     </main>
 
 <?php

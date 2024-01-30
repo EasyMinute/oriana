@@ -113,6 +113,12 @@ class Acf_Config {
 		        'category' => 'proacto-custom-blocks',
 		        'icon' => 'columns',
 	        ),
+	        array(
+		        'name' => 'accordeons',
+		        'title' => __('Випадайки', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'arrow-down-alt2',
+	        ),
         );
 
         if ( function_exists( 'acf_register_block_type' ) ) {

@@ -24,6 +24,7 @@ div{
 //CORE GUTENBERG
 .prt-core-block {
   margin-bottom: 16px;
+  overflow: hidden;
 
   strong, b {
     font-weight: 700;
@@ -31,6 +32,10 @@ div{
 
   i, em {
     font-style: italic;
+  }
+
+  &.wp-block-image.aligncenter {
+    display: block !important;
   }
 }
 
@@ -75,5 +80,13 @@ ul.prt-core-block {
     object-fit: contain;
     object-position: center;
     border-radius: 16px;
+  }
+}
+
+.page-template-default.page {
+  .short_baner {
+    & + .container-small {
+      padding-top: 40px;
+    }
   }
 }

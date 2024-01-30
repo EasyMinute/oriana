@@ -5,4 +5,5 @@
 import "./templates/header";
 
 import "./blocks/slider";
+import "./blocks/accordeons";
 

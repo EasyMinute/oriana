@@ -105,12 +105,24 @@ add_filter( 'render_block', 'wpse308021_add_class_to_list_block', 10, 2 );
  * @see https://github.com/WordPress/gutenberg/pull/42269
  */
 function wpse308021_add_class_to_list_block( $block_content, $block ) {
+	// List of default Gutenberg blocks you want to target
+	$default_blocks = ['core/paragraph', 'core/image', 'core/list', 'core/heading', 'core/quote', ];
 
-    $block_content = new WP_HTML_Tag_Processor( $block_content );
-    $block_content->next_tag(); /* first tag should always be ul or ol */
-    $block_content->add_class( 'prt-core-block paragraph' );
-    $block_content->get_updated_html();
+	// Check if the block is a default Gutenberg block
+	if (in_array($block['blockName'], $default_blocks)) {
+		// Process the existing block content
+		$block_content = new WP_HTML_Tag_Processor( $block_content );
+		$block_content->next_tag(); // first tag should always be ul or ol
+		$block_content->add_class( 'prt-core-block paragraph' );
+		$updated_content = $block_content->get_updated_html();
 
+		// Wrap the updated content in a div with the class 'container-small'
+		$wrapped_content = '<div class="container-small">' . $updated_content . '</div>';
+
+		return $wrapped_content;
+	}
+
+	// Return the original content for custom blocks
 	return $block_content;
 }
 	

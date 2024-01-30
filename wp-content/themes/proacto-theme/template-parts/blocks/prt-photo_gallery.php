@@ -12,16 +12,17 @@ $photo_gallery = get_field('photo_gallery');
 ?>
 
 <section class="<?php echo  esc_attr($className)?> photo_gallery">
-	<div class="photo_gallery-head">
-		<h3 class="heading-h3">
-			<?= $photo_gallery['title'] ?>
-		</h3>
-		<div class="swiper-buttons">
-			<button class="swiper-button swiper-button-next"></button>
-			<button class="swiper-button swiper-button-prev"></button>
-		</div>
-	</div>
-	<div class="photo_gallery-wrap swiper">
+    <div class="container-small">
+        <div class="photo_gallery-head">
+            <h3 class="heading-h3">
+                <?= $photo_gallery['title'] ?>
+            </h3>
+            <div class="swiper-buttons">
+                <button class="swiper-button swiper-button-next"></button>
+                <button class="swiper-button swiper-button-prev"></button>
+            </div>
+        </div>
+        <div class="photo_gallery-wrap swiper">
 		<div class="swiper-wrapper">
 			<?php foreach($photo_gallery['photo'] as $image): ?>
 				<div class="swiper-slide">
@@ -30,4 +31,5 @@ $photo_gallery = get_field('photo_gallery');
 			<?php endforeach; ?>
 		</div>
 	</div>
+    </div>
 </section>
