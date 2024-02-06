@@ -1,0 +1,46 @@
+.teachers {
+  padding: 40px 0 112px;
+
+  &__header {
+    margin-bottom: 32px;
+  }
+
+  .teachers__wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .teacher_card {
+      width: 100%;
+      max-width: calc(25% - 12px);
+      margin-bottom: 16px;
+
+      @media screen and (max-width: 920px){
+        max-width: calc(50% - 8px);
+      }
+
+      @media screen and (max-width: 920px){
+        max-width: 100%;
+      }
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      height: 0;
+      width: 100%;
+      max-width: calc(25% - 12px);
+      order: 1;
+
+      @media screen and (max-width: 920px){
+        max-width: calc(50% - 8px);
+      }
+
+      @media screen and (max-width: 920px){
+        display: none;
+      }
+    }
+  }
+}

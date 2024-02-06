@@ -119,6 +119,18 @@ class Acf_Config {
 		        'category' => 'proacto-custom-blocks',
 		        'icon' => 'arrow-down-alt2',
 	        ),
+	        array(
+		        'name' => 'teachers',
+		        'title' => __('Педагоги', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'businesswoman',
+	        ),
+	        array(
+		        'name' => 'graduates',
+		        'title' => __('Випускники', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'smiley',
+	        ),
         );
 
         if ( function_exists( 'acf_register_block_type' ) ) {

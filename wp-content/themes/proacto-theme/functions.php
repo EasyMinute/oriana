@@ -34,6 +34,10 @@ require get_template_directory() . '/functions-parts/acf-settings.php';
  * Підключення stuff
  */
 require get_template_directory() . '/functions-parts/stuff.php';
+/**
+ * Підключення ajax callbacks
+ */
+require get_template_directory() . '/functions-parts/ajax-callbacks.php';
 
 
 
