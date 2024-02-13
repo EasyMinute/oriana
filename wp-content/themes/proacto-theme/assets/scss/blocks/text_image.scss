@@ -1,0 +1,24 @@
+@import "../variables";
+
+.text_image {
+  padding: 112px 0;
+
+  @media screen and (max-width: 920px){
+    padding: 32px 0;
+  }
+
+  &.green {
+    background-color: $primary-100;
+  }
+
+  &__head {
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+  }
+
+  &__images {
+    img {
+      margin-top: 32px;
+    }
+  }
+}

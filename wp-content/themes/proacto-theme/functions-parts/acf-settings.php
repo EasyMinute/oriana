@@ -131,6 +131,18 @@ class Acf_Config {
 		        'category' => 'proacto-custom-blocks',
 		        'icon' => 'smiley',
 	        ),
+	        array(
+		        'name' => 'text_image',
+		        'title' => __('Текст + Картинки', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'welcome-widgets-menus',
+	        ),
+	        array(
+		        'name' => 'text_links',
+		        'title' => __('Текст + Посилання', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'button',
+	        ),
         );
 
         if ( function_exists( 'acf_register_block_type' ) ) {

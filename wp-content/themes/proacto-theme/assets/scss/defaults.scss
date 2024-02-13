@@ -90,3 +90,32 @@ ul.prt-core-block {
     }
   }
 }
+
+
+//wysiwyg-container
+.wysiwyg-container {
+  strong, b {
+    font-weight: 700;
+  }
+
+  i, em {
+    font-style: italic;
+  }
+
+  ol {
+    list-style-type: decimal;
+
+    li {
+      margin-left: 32px;
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+
+    li {
+      margin-left: 32px;
+    }
+  }
+
+}

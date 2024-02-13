@@ -1,0 +1,15 @@
+.text_links {
+  padding: 40px 0;
+
+  &__text {
+    margin-bottom: 16px;
+  }
+
+  &__links {
+    min-height: 320px;
+
+    @media screen and (max-width: 920px){
+      min-height: 120px;
+    }
+  }
+}

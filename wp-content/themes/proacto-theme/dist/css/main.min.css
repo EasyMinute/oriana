@@ -469,6 +469,25 @@ ul.prt-core-block li {
   padding-top: 40px;
 }
 
+.wysiwyg-container strong, .wysiwyg-container b {
+  font-weight: 700;
+}
+.wysiwyg-container i, .wysiwyg-container em {
+  font-style: italic;
+}
+.wysiwyg-container ol {
+  list-style-type: decimal;
+}
+.wysiwyg-container ol li {
+  margin-left: 32px;
+}
+.wysiwyg-container ul {
+  list-style-type: disc;
+}
+.wysiwyg-container ul li {
+  margin-left: 32px;
+}
+
 .swiper-buttons {
   position: relative;
   display: -webkit-box;
@@ -801,6 +820,36 @@ ul.prt-core-block li {
 }
 .teacher_card__role {
   color: #757575;
+}
+
+.link-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 0px 8px -2px rgba(30, 30, 30, 0.2509803922);
+          box-shadow: 0px 0px 8px -2px rgba(30, 30, 30, 0.2509803922);
+  padding: 20px 24px 20px 16px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.link-card img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.link-card span {
+  display: block;
+  margin: auto auto auto 0;
+}
+.link-card svg {
+  margin-left: 8px;
 }
 
 .header {
@@ -1948,6 +1997,40 @@ ul.prt-core-block li {
   margin-bottom: 32px;
   border-radius: 16px;
   overflow: hidden;
+}
+
+.text_image {
+  padding: 112px 0;
+}
+@media screen and (max-width: 920px) {
+  .text_image {
+    padding: 32px 0;
+  }
+}
+.text_image.green {
+  background-color: #ECF4F5;
+}
+.text_image__head {
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+}
+.text_image__images img {
+  margin-top: 32px;
+}
+
+.text_links {
+  padding: 40px 0;
+}
+.text_links__text {
+  margin-bottom: 16px;
+}
+.text_links__links {
+  min-height: 320px;
+}
+@media screen and (max-width: 920px) {
+  .text_links__links {
+    min-height: 120px;
+  }
 }
 
 .back-baner {
