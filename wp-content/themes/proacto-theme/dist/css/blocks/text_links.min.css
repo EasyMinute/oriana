@@ -1,1 +1,17 @@
-.text_links{padding:40px 0}.text_links__text{margin-bottom:16px}.text_links__links{min-height:320px}@media screen and (max-width:920px){.text_links__links{min-height:120px}}
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./node_modules/sass-loader/dist/cjs.js!./scss/blocks/text_links.scss ***!
+  \********************************************************************************************************************************************************************************************/
+.text_links {
+  padding: 40px 0;
+}
+.text_links__text {
+  margin-bottom: 16px;
+}
+.text_links__links {
+  min-height: 320px;
+}
+@media screen and (max-width: 920px) {
+  .text_links__links {
+    min-height: 120px;
+  }
+}

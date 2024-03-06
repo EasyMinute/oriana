@@ -1,0 +1,26 @@
+.two_images {
+  padding: 40px 0;
+
+  @media screen and (max-width: 920px){
+    padding: 24px 0;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: flex-start;
+
+    @media screen and (max-width: 920px){
+      flex-direction: column;
+    }
+
+    img {
+      margin: 0 12px;
+      width: 50%;
+
+      @media screen and (max-width: 920px){
+        margin: 0 0 16px 0;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,1 +1,21 @@
-.text_image{padding:112px 0}@media screen and (max-width:920px){.text_image{padding:32px 0}}.text_image.green{background-color:#ecf4f5}.text_image__head{margin-bottom:32px;padding-bottom:16px}.text_image__images img{margin-top:32px}
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./node_modules/sass-loader/dist/cjs.js!./scss/blocks/text_image.scss ***!
+  \********************************************************************************************************************************************************************************************/
+.text_image {
+  padding: 112px 0;
+}
+@media screen and (max-width: 920px) {
+  .text_image {
+    padding: 32px 0;
+  }
+}
+.text_image.green {
+  background-color: #ECF4F5;
+}
+.text_image__head {
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+}
+.text_image__images img {
+  margin-top: 32px;
+}

@@ -1,1 +1,71 @@
-.prt-baner{background-position:50%;background-size:cover;height:608px;position:relative}.prt-baner:after{background:rgba(30,30,30,.6);content:"";display:block;height:100%;left:0;position:absolute;top:0;width:100%}.prt-baner .container{height:100%}.prt-baner__wrap{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-box-align:center;-ms-flex-align:center;-webkit-box-pack:center;-ms-flex-pack:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;height:100%;justify-content:center;margin:auto;position:relative;width:100%;z-index:1}.prt-baner__wrap h1{color:#fff;font-weight:800;padding-bottom:28px;position:relative;text-align:center;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}.prt-baner__wrap h1:after{background-color:#fff;border-radius:4px;bottom:0;content:"";display:block;height:4px;left:0;position:absolute;width:100%}.prt-baner__wrap p{color:#fff;padding-top:28px;text-align:center;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}
+/*!***************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./node_modules/sass-loader/dist/cjs.js!./scss/blocks/baner.scss ***!
+  \***************************************************************************************************************************************************************************************/
+.prt-baner {
+  height: 608px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+.prt-baner:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(30, 30, 30, 0.6);
+}
+.prt-baner .container {
+  height: 100%;
+}
+.prt-baner__wrap {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.prt-baner__wrap h1 {
+  text-align: center;
+  color: #FFFFFF;
+  padding-bottom: 28px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 800;
+  position: relative;
+}
+.prt-baner__wrap h1:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.prt-baner__wrap p {
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 28px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}

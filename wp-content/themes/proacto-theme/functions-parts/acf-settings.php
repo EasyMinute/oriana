@@ -143,6 +143,18 @@ class Acf_Config {
 		        'category' => 'proacto-custom-blocks',
 		        'icon' => 'button',
 	        ),
+	        array(
+		        'name' => 'table_block',
+		        'title' => __('Таблиця', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'editor-table',
+	        ),
+	        array(
+		        'name' => 'two_images',
+		        'title' => __('Дві картинки', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'columns',
+	        ),
         );
 
         if ( function_exists( 'acf_register_block_type' ) ) {

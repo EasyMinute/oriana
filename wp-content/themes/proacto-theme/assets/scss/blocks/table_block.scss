@@ -1,0 +1,37 @@
+@import "../variables";
+
+.prt-table_block {
+  padding: 40px 0;
+
+  @media screen and (max-width: 920px){
+    padding: 24px 0;
+  }
+
+  .table_block__head {
+    margin-bottom: 32px;
+  }
+
+  .table_block__main {
+    .table_block__subtitle {
+      margin-bottom: 16px;
+    }
+
+    table {
+      border: 1px solid $neutral-300;
+      margin-bottom: 16px;
+
+      th {
+        background-color: $primary-100;
+        padding: 12px 16px;
+        border: 1px solid $neutral-300;
+      }
+
+      tr {
+        td {
+          padding: 12px 16px;
+          border: 1px solid $neutral-300;
+        }
+      }
+    }
+  }
+}
