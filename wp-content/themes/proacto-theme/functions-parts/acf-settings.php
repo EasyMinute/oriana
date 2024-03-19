@@ -155,6 +155,18 @@ class Acf_Config {
 		        'category' => 'proacto-custom-blocks',
 		        'icon' => 'columns',
 	        ),
+	        array(
+		        'name' => 'contacts',
+		        'title' => __('Контакти', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'building',
+	        ),
+	        array(
+		        'name' => 'map',
+		        'title' => __('Мапа', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'location',
+	        ),
         );
 
         if ( function_exists( 'acf_register_block_type' ) ) {

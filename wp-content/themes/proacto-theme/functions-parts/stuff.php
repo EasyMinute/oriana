@@ -125,6 +125,11 @@ function wpse308021_add_class_to_list_block( $block_content, $block ) {
 	// Return the original content for custom blocks
 	return $block_content;
 }
-	
-	
+
+function my_acf_google_map_api( $api ){
+	$api['key'] = 'AIzaSyAmVLjG2KWX4uozMPRRuF4q_n5H68IY5og';
+	return $api;
+}
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
 ?>

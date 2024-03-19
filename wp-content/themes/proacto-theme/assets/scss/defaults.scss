@@ -20,6 +20,13 @@ div{
   box-sizing: border-box;
 }
 
+main {
+  min-height: calc(100vh - 206px);
+
+  @media screen and (max-width: 920px){
+    min-height: calc(100vh - 716px);
+  }
+}
 
 //CORE GUTENBERG
 .prt-core-block {
