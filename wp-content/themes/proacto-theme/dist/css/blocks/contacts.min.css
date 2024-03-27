@@ -1,0 +1,48 @@
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./node_modules/sass-loader/dist/cjs.js!./scss/blocks/contacts.scss ***!
+  \******************************************************************************************************************************************************************************************/
+.prt-contacts {
+  padding: 40px 0;
+}
+.prt-contacts .contacts__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.prt-contacts .contacts__wrap .contacts__part {
+  width: 100%;
+  max-width: calc(33.3333333333% - 85.3333333333px);
+}
+@media screen and (max-width: 920px) {
+  .prt-contacts .contacts__wrap .contacts__part {
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+}
+.prt-contacts .contacts__wrap .contacts__part > h3 {
+  color: #165C64;
+  margin-bottom: 32px;
+}
+.prt-contacts .contacts__wrap .contacts__part .contacts__item {
+  margin-bottom: 28px;
+}
+.prt-contacts .contacts__wrap .contacts__part .contacts__item .contacts__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+.prt-contacts .contacts__wrap .contacts__part .contacts__item .contacts__subtitle svg {
+  margin-right: 8px;
+}

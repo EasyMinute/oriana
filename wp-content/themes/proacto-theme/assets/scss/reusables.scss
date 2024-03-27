@@ -90,6 +90,18 @@
   border-radius: 40px;
   border: 1px solid;
   width: fit-content;
+
+  &.pay {
+    border-color: $accent-brown;
+    color: $accent-brown;
+    background-color: $accent-light-brown;
+  }
+
+  &.free {
+    border-color: $accent-green;
+    color: $accent-green;
+    background-color: $accent-light-green;
+  }
 }
 
 

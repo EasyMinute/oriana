@@ -167,6 +167,12 @@ class Acf_Config {
 		        'category' => 'proacto-custom-blocks',
 		        'icon' => 'location',
 	        ),
+	        array(
+		        'name' => 'entertainment',
+		        'title' => __('Дозвілля', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'admin-customizer',
+	        ),
         );
 
         if ( function_exists( 'acf_register_block_type' ) ) {

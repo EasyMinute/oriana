@@ -1,0 +1,92 @@
+@import "../variables";
+
+.prt-entertainment {
+  padding: 40px 0;
+}
+
+.entertainment-card {
+  margin-bottom: 16px;
+
+  &-head {
+    border-radius: 16px 16px 0 0;
+    border: 1px solid $neutral-400;
+    border-bottom: none;
+    padding: 24px 24px 16px 24px;
+
+    .entertainment-card-titles {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+
+      @media screen and (max-width: 920px){
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      h3 {
+        @media screen and (max-width: 920px){
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+
+  &-main {
+    padding: 16px 24px;
+    border: 1px solid $neutral-400;
+
+    .entertainment-card-grade {
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+
+      h4 {
+        color: $primary-600;
+        margin-bottom: 8px;
+      }
+
+      .entertainment-card-schedule {
+        display: flex;
+        flex-wrap: wrap;
+        width: max-content;
+        min-width: 300px;
+        @media screen and (max-width: 920px){
+          max-width: 100%;
+          min-width: unset;
+        }
+
+        li {
+          width: 50%;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  &-foot {
+    border-radius: 0 0 16px 16px;
+    border: 1px solid $neutral-400;
+    border-top: none;
+    padding: 16px 24px 16px 24px;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 920px){
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .fb-link {
+      font-weight: 600;
+      margin-right: 24px;
+      @media screen and (max-width: 920px){
+        margin-right: 0;
+        margin-bottom: 12px;
+      }
+    }
+
+    .icon-link:hover {
+      text-decoration: underline;
+    }
+  }
+}

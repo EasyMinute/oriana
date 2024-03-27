@@ -2,6 +2,22 @@
 //Register CPT and taxonomies for website
 
 function register_post_types() {
+	register_post_type( 'entertainment',
+		array(
+			'labels' => array(
+				'name'          => __('Дозвілля'),
+				'singular_name' => __('Дозвілля'),
+				'add_new'       => __('Додати дозвілля')
+			),
+			'public'        => true,
+			'publicly_queryable' => true,
+			'has_archive'   => true,
+			'menu_position' => 4,
+			'menu_icon'     => 'dashicons-admin-customizer',
+			'supports'      => array('title','thumbnail','custom-fields')
+		)
+	);
+
 	register_post_type( 'informations',
 		array(
 			'labels' => array(
