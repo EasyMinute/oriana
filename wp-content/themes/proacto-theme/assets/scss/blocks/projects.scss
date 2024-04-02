@@ -1,0 +1,50 @@
+@import "../variables";
+
+.projects {
+  padding: 40px 0;
+  overflow: hidden;
+
+  &__header {
+    overflow: auto;
+
+    &__wrap {
+      display: flex;
+      width: max-content;
+      margin-bottom: 32px;
+
+      .choise-chips:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .project-card {
+      max-width: calc(50% - 8px);
+      margin-bottom: 16px;
+      overflow: hidden;
+      transition: all .3s;
+
+      &.hidden {
+        padding: 0;
+        border: none;
+        max-height: 0;
+        max-width: 0;
+        order: 1;
+
+        @media screen and (max-width: 920px) {
+          max-width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 920px) {
+        max-width: 100%;
+      }
+    }
+  }
+}

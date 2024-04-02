@@ -9,4 +9,5 @@ import "./blocks/slider";
 import "./blocks/accordeons";
 import "./blocks/teachers";
 import "./blocks/graduates";
+import "./blocks/projects";
 

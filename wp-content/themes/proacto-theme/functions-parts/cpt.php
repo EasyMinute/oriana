@@ -2,6 +2,23 @@
 //Register CPT and taxonomies for website
 
 function register_post_types() {
+	register_post_type( 'projects',
+		array(
+			'labels' => array(
+				'name'          => __('Проєкти'),
+				'singular_name' => __('Проєкт'),
+				'add_new'       => __('Додати проєкт')
+			),
+			'public'        => true,
+			'publicly_queryable' => true,
+			'has_archive'   => true,
+			'menu_position' => 4,
+			'menu_icon'     => 'dashicons-portfolio',
+			'show_in_rest'  => true,
+			'supports'      => array('title', 'thumbnail','custom-fields', 'editor')
+		)
+	);
+
 	register_post_type( 'entertainment',
 		array(
 			'labels' => array(

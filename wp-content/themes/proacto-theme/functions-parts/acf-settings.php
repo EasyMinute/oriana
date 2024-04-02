@@ -173,6 +173,12 @@ class Acf_Config {
 		        'category' => 'proacto-custom-blocks',
 		        'icon' => 'admin-customizer',
 	        ),
+	        array(
+		        'name' => 'projects',
+		        'title' => __('Проєкти', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'portfolio',
+	        ),
         );
 
         if ( function_exists( 'acf_register_block_type' ) ) {
