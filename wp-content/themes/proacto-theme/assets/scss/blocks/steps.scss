@@ -1,0 +1,61 @@
+@import "../variables";
+
+.prt-steps {
+  padding: 128px 0;
+
+  @media screen and (max-width: 920px){
+    padding: 64px 0;
+  }
+
+  .title {
+    margin-bottom: 32px;
+    color: $primary-600;
+  }
+  
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    @media screen and (max-width: 920px){
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .step-card {
+      max-width: calc(25% - 12px);
+      height: inherit;
+      display: flex;
+      flex-direction: column;
+      @media screen and (max-width: 920px){
+        max-width: 100%;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+.step-card {
+  width: 100%;
+  background-color: $primary-600;
+  border-radius: 16px;
+  padding: 50px 32px;
+  background-image: url(/img/icons/fingerprint-step_card.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  * {
+    color: $secondary-100;
+  }
+
+  .number {
+    width: 48px;
+    height: 48px;
+    border: 4px solid $secondary-100;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+}

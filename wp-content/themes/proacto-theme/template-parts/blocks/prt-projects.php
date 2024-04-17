@@ -36,7 +36,7 @@ $query = new WP_Query( $args );
                     <?= __('Тривають', 'proacto') ?>
                 </button>
                 <button class="choise-chips" data-target="finished">
-                    <?= __('Завершені', 'proacto') ?>
+                    <?= __('Заввум вершені', 'proacto') ?>
                 </button>
             </div>
 		</div>

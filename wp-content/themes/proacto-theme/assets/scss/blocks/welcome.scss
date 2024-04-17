@@ -1,0 +1,58 @@
+@import "../variables";
+
+.prt-welcome {
+  padding: 120px 0;
+  background-color: $primary-100;
+  background-image: url(/img/icons/fingerprint-welcome.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  @media screen and (max-width: 920px) {
+    padding: 64px 0;
+    background-image: none;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 920px) {
+      flex-direction: column-reverse;
+    }
+
+    .welcome__image {
+      width: 100%;
+      max-width: calc(60% - 64px);
+      @media screen and (max-width: 920px) {
+        max-width: 100%;
+      }
+    }
+
+    .welcome__texts {
+      width: 100%;
+      max-width: calc(40% - 64px);
+      @media screen and (max-width: 920px) {
+        max-width: 100%;
+        margin-bottom: 24px;
+      }
+
+      .title {
+        margin-bottom: 32px;
+        color: $primary-600;
+      }
+
+      .paragraph {
+        margin-bottom: 24px;
+      }
+
+      .welcome__socials {
+        display: flex;
+        align-items: center;
+
+        a {
+          display: inline-block;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

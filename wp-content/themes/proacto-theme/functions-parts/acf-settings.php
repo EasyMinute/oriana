@@ -179,6 +179,36 @@ class Acf_Config {
 		        'category' => 'proacto-custom-blocks',
 		        'icon' => 'portfolio',
 	        ),
+	        array(
+		        'name' => 'image_aim',
+		        'title' => __('Мета роботи', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'marker',
+	        ),
+	        array(
+		        'name' => 'structure',
+		        'title' => __('Структура', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'screenoptions',
+	        ),
+	        array(
+		        'name' => 'image_text',
+		        'title' => __('Картинка з текстом', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'welcome-widgets-menus',
+	        ),
+	        array(
+		        'name' => 'steps',
+		        'title' => __('Крокові картки', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'buddicons-activity',
+	        ),
+	        array(
+		        'name' => 'welcome',
+		        'title' => __('Запрошення', 'proacto'),
+		        'category' => 'proacto-custom-blocks',
+		        'icon' => 'buddicons-tracking',
+	        ),
         );
 
         if ( function_exists( 'acf_register_block_type' ) ) {

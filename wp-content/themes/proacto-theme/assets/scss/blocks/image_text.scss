@@ -1,0 +1,47 @@
+@import "../variables";
+
+.image_text {
+  padding: 112px;
+  background-color: $primary-100;
+  @media screen and (max-width: 920px) {
+    padding: 64px 0;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 920px) {
+      flex-direction: column;
+    }
+
+    .image_text__texts {
+      width: 100%;
+      max-width: calc(40% - 62px);
+      @media screen and (max-width: 920px) {
+        max-width: 100%;
+        margin-bottom: 32px;
+      }
+
+      .underlined {
+        margin-bottom: 32px;
+        color: $primary-600;
+      }
+
+      .paragraph ul li{
+        list-style-type: disc;
+        margin-left: 24px;
+      }
+    }
+
+    img {
+      width: 100%;
+      max-width: calc(60% - 62px);
+      border-radius: 16px;
+      overflow: hidden;
+      @media screen and (max-width: 920px) {
+        max-width: 100%;
+      }
+    }
+  }
+}
